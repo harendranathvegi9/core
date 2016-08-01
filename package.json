@@ -23,16 +23,16 @@
   },
   "homepage": "https://github.com/ng-bootstrap/ng-bootstrap#readme",
   "dependencies": {
-    "@angular/core": "2.0.0-rc.4",
-    "@angular/common": "2.0.0-rc.4"
+    "@angular/core": "angular/core-builds",
+    "@angular/common": "angular/common-builds",
+    "@angular/forms": "angular/forms-builds"
   },
   "devDependencies": {
-    "@angular/compiler": "2.0.0-rc.4",
-    "@angular/forms": "0.2.0",
-    "@angular/http": "2.0.0-rc.4",
-    "@angular/platform-browser": "2.0.0-rc.4",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
-    "@angular/router": "3.0.0-beta.2",
+    "@angular/compiler": "angular/compiler-builds",
+    "@angular/http": "angular/http-builds",
+    "@angular/platform-browser": "angular/platform-browser-builds",
+    "@angular/platform-browser-dynamic": "angular/platform-browser-dynamic-builds",
+    "@angular/router": "angular/router-builds",
     "angular2-template-loader": "^0.4.0",
     "angulartics2": "^1.1.2",
     "autoprefixer": "^6.3.6",
