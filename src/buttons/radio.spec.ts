@@ -32,6 +32,22 @@ describe('ngbRadioGroup', () => {
     TestBed.configureTestingModule({imports: [NgbButtonsModule, FormsModule, ReactiveFormsModule]});
   }));
 
+  it('should not touch active class on labels not part of a group', async(inject([TestComponentBuilder], (tcb) => {
+       tcb.overrideTemplate(TestComponent, '<label class="btn" [class.active]="true"></label>')
+           .createAsync(TestComponent)
+           .then((fixture) => {
+
+             fixture.detectChanges();
+             expect(fixture.nativeElement.children[0]).toHaveCssClass('active');
+           });
+     })));
+});
+
+describe('ngbRadioGroup', () => {
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({imports: [NgbButtonsModule, FormsModule, ReactiveFormsModule]});
+  }));
+
   const defaultHtml = `<div [(ngModel)]="model" ngbRadioGroup>
       <label class="btn">
         <input type="radio" name="radio" [value]="values[0]"/> {{ values[0] }}
