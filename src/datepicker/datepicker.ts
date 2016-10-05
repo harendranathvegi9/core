@@ -131,7 +131,7 @@ export class NgbDatepicker implements OnChanges,
    * Use 'startDate' input as an alternative
    */
   navigateTo(date?: {year: number, month: number}) {
-    this._setViewWithinLimits(date ? NgbDate.from(date) : this._calendar.getToday());
+    this._setViewWithinLimits(date || this.model ? NgbDate.from(date) || this.model : this._calendar.getToday());
     this._updateData();
   }
 

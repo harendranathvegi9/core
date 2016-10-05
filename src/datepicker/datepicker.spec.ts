@@ -267,6 +267,16 @@ describe('ngb-datepicker', () => {
 
   describe('forms', () => {
 
+    it('should display month from model if no startDate provided', () => {
+      const fixture = createTestComponent(`<ngb-datepicker [ngModel]="{year: 2001, month: 11, day: 05}"></ngb-datepicker>`);
+      fixture.detectChanges();
+      fixture.whenStable()
+        .then(() => {
+          expect(getMonthSelect(fixture.nativeElement).value).toBe('11');
+          expect(getYearSelect(fixture.nativeElement).value).toBe('2001');
+        })
+    });
+
     it('should work with template-driven form validation', async(() => {
          const fixture = createTestComponent(`
         <form>
