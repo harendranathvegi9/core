@@ -7,12 +7,12 @@ export {NgbdModalContent} from './component/modal-component';
 
 export const DEMO_SNIPPETS = {
   'basic': {
-    'code': require('!!prismjs?lang=typescript!./basic/modal-basic'),
-    'markup': require('!!prismjs?lang=markup!./basic/modal-basic.html')},
+    'code': '',
+    'markup': ''},
   'component': {
-    'code': require('!!prismjs?lang=typescript!./component/modal-component'),
-    'markup': require('!!prismjs?lang=markup!./component/modal-component.html')},
+    'code': '',
+    'markup': ''},
   'customclass': {
-    'code': require('!!prismjs?lang=typescript!./customclass/modal-customclass'),
-    'markup': require('!!prismjs?lang=markup!./customclass/modal-customclass.html')}
+    'code': '',
+    'markup': ''}
 };

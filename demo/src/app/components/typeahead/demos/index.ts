@@ -9,23 +9,23 @@ export const DEMO_DIRECTIVES =
 
 export const DEMO_SNIPPETS = {
   basic: {
-    code: require('!!prismjs?lang=typescript!./basic/typeahead-basic'),
-    markup: require('!!prismjs?lang=markup!./basic/typeahead-basic.html')
+    code: '',
+    markup: ''
   },
   format: {
-    code: require('!!prismjs?lang=typescript!./format/typeahead-format'),
-    markup: require('!!prismjs?lang=markup!./format/typeahead-format.html')
+    code: '',
+    markup: ''
   },
   http: {
-    code: require('!!prismjs?lang=typescript!./http/typeahead-http'),
-    markup: require('!!prismjs?lang=markup!./http/typeahead-http.html')
+    code: '',
+    markup: ''
   },
   template: {
-    code: require('!!prismjs?lang=typescript!./template/typeahead-template'),
-    markup: require('!!prismjs?lang=markup!./template/typeahead-template.html')
+    code: '',
+    markup: ''
   },
   config: {
-    code: require('!!prismjs?lang=typescript!./config/typeahead-config'),
-    markup: require('!!prismjs?lang=markup!./config/typeahead-config.html')
+    code: '',
+    markup: ''
   }
 };

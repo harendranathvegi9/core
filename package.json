@@ -9,7 +9,10 @@
     "install": "node misc/validate-commit.install.js",
     "test": "karma start karma.conf.js",
     "typings": "typings",
-    "api-doc-tdd": "jasmine-node misc/api-doc.spec.js --autotest --watch misc/api-doc-test-cases/*.ts misc/api-doc.js"
+    "api-doc-tdd": "jasmine-node misc/api-doc.spec.js --autotest --watch misc/api-doc-test-cases/*.ts misc/api-doc.js",
+    "build": "ngc -p tsconfig-aot.json",
+    "package": "rollup -c rollup.js",
+    "aot": "rm -rf aot && ngc -p tsconfig-aot.json && rollup -c rollup.js"
   },
   "repository": {
     "type": "git",
@@ -24,17 +27,17 @@
   },
   "homepage": "https://github.com/ng-bootstrap/ng-bootstrap#readme",
   "dependencies": {
-    "@angular/core": "2.0.0",
-    "@angular/common": "2.0.0",
-    "@angular/forms": "2.0.0"
+    "@angular/core": "2.0.1",
+    "@angular/common": "2.0.1",
+    "@angular/forms": "2.0.1"
   },
   "devDependencies": {
-    "@angular/compiler": "2.0.0",
+    "@angular/compiler": "2.0.1",
     "@angular/compiler-cli": "0.6.1",
-    "@angular/http": "2.0.0",
-    "@angular/platform-browser": "2.0.0",
-    "@angular/platform-browser-dynamic": "2.0.0",
-    "@angular/router": "3.0.0",
+    "@angular/http": "2.0.1",
+    "@angular/platform-browser": "2.0.1",
+    "@angular/platform-browser-dynamic": "2.0.1",
+    "@angular/router": "3.0.1",
     "angular2-template-loader": "^0.4.0",
     "autoprefixer": "^6.3.6",
     "bootstrap": "^4.0.0-alpha.4",
@@ -75,6 +78,11 @@
     "prismjs": "^1.5.1",
     "prismjs-loader": "0.0.3",
     "raw-loader": "^0.5.1",
+    "rollup": "^0.36.3",
+    "rollup-plugin-alias": "^1.2.0",
+    "rollup-plugin-commonjs": "^5.0.5",
+    "rollup-plugin-node-resolve": "^2.0.0",
+    "rollup-plugin-uglify": "^1.0.1",
     "run-sequence": "^1.1.4",
     "rxjs": "5.0.0-beta.12",
     "sass-loader": "^4.0.0",

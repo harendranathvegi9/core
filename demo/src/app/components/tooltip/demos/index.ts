@@ -8,23 +8,23 @@ export const DEMO_DIRECTIVES = [NgbdTooltipBasic, NgbdTooltipContainer, NgbdTool
 
 export const DEMO_SNIPPETS = {
   basic: {
-    code: require('!!prismjs?lang=typescript!./basic/tooltip-basic'),
-    markup: require('!!prismjs?lang=markup!./basic/tooltip-basic.html')
+    code: '',
+    markup: ''
   },
   container: {
-    code: require('!!prismjs?lang=typescript!./container/tooltip-container'),
-    markup: require('!!prismjs?lang=markup!./container/tooltip-container.html')
+    code: '',
+    markup: ''
   },
   tplcontent: {
-    code: require('!!prismjs?lang=typescript!./tplcontent/tooltip-tplcontent'),
-    markup: require('!!prismjs?lang=markup!./tplcontent/tooltip-tplcontent.html')
+    code: '',
+    markup: ''
   },
   triggers: {
-    code: require('!!prismjs?lang=typescript!./triggers/tooltip-triggers'),
-    markup: require('!!prismjs?lang=markup!./triggers/tooltip-triggers.html')
+    code: '',
+    markup: ''
   },
   config: {
-    code: require('!!prismjs?lang=typescript!./config/tooltip-config'),
-    markup: require('!!prismjs?lang=markup!./config/tooltip-config.html')
+    code: '',
+    markup: ''
   }
 };

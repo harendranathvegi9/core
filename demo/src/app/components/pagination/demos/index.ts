@@ -7,19 +7,19 @@ export const DEMO_DIRECTIVES = [NgbdPaginationAdvanced, NgbdPaginationBasic, Ngb
 
 export const DEMO_SNIPPETS = {
   advanced: {
-    code: require('!!prismjs?lang=typescript!./advanced/pagination-advanced'),
-    markup: require('!!prismjs?lang=markup!./advanced/pagination-advanced.html')
+    code: '',
+    markup: ''
   },
   basic: {
-    code: require('!!prismjs?lang=typescript!./basic/pagination-basic'),
-    markup: require('!!prismjs?lang=markup!./basic/pagination-basic.html')
+    code: '',
+    markup: ''
   },
   size: {
-    code: require('!!prismjs?lang=typescript!./size/pagination-size'),
-    markup: require('!!prismjs?lang=markup!./size/pagination-size.html')
+    code: '',
+    markup: ''
   },
   config: {
-    code: require('!!prismjs?lang=typescript!./config/pagination-config'),
-    markup: require('!!prismjs?lang=markup!./config/pagination-config.html')
+    code: '',
+    markup: ''
   }
 };

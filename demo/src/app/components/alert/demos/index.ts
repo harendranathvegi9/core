@@ -9,23 +9,23 @@ export const DEMO_DIRECTIVES =
 
 export const DEMO_SNIPPETS = {
   basic: {
-    code: require('!!prismjs?lang=typescript!./basic/alert-basic'),
-    markup: require('!!prismjs?lang=markup!./basic/alert-basic.html')
+    code: '',
+    markup: ''
   },
   closeable: {
-    code: require('!!prismjs?lang=typescript!./closeable/alert-closeable'),
-    markup: require('!!prismjs?lang=markup!./closeable/alert-closeable.html')
+    code: '',
+    markup: ''
   },
   custom: {
-    code: require('!!prismjs?lang=typescript!./custom/alert-custom'),
-    markup: require('!!prismjs?lang=markup!./custom/alert-custom.html')
+    code: '',
+    markup: ''
   },
   selfClosing: {
-    code: require('!!prismjs?lang=typescript!./selfclosing/alert-selfclosing'),
-    markup: require('!!prismjs?lang=markup!./selfclosing/alert-selfclosing.html')
+    code: '',
+    markup: ''
   },
   config: {
-    code: require('!!prismjs?lang=typescript!./config/alert-config'),
-    markup: require('!!prismjs?lang=markup!./config/alert-config.html')
+    code: '',
+    markup: ''
   }
 };

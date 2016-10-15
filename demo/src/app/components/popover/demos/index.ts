@@ -16,27 +16,27 @@ export const DEMO_DIRECTIVES = [
 
 export const DEMO_SNIPPETS = {
   basic: {
-    code: require('!!prismjs?lang=typescript!./basic/popover-basic'),
-    markup: require('!!prismjs?lang=markup!./basic/popover-basic.html')
+    code: '',
+    markup: ''
   },
   tplcontent: {
-    code: require('!!prismjs?lang=typescript!./tplcontent/popover-tplcontent'),
-    markup: require('!!prismjs?lang=markup!./tplcontent/popover-tplcontent.html')
+    code: '',
+    markup: ''
   },
   triggers: {
-    code: require('!!prismjs?lang=typescript!./triggers/popover-triggers'),
-    markup: require('!!prismjs?lang=markup!./triggers/popover-triggers.html')
+    code: '',
+    markup: ''
   },
   visibility: {
-    code: require('!!prismjs?lang=typescript!./visibility/popover-visibility'),
-    markup: require('!!prismjs?lang=markup!./visibility/popover-visibility.html')
+    code: '',
+    markup: ''
   },
   container: {
-    code: require('!!prismjs?lang=typescript!./container/popover-container'),
-    markup: require('!!prismjs?lang=markup!./container/popover-container.html')
+    code: '',
+    markup: ''
   },
   config: {
-    code: require('!!prismjs?lang=typescript!./config/popover-config'),
-    markup: require('!!prismjs?lang=markup!./config/popover-config.html')
+    code: '',
+    markup: ''
   }
 };

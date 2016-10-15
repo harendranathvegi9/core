@@ -11,27 +11,27 @@ export const DEMO_DIRECTIVES = [
 
 export const DEMO_SNIPPETS = {
   basic: {
-    code: require('!!prismjs?lang=typescript!./basic/datepicker-basic'),
-    markup: require('!!prismjs?lang=markup!./basic/datepicker-basic.html')
+    code: '',
+    markup: ''
   },
   popup: {
-    code: require('!!prismjs?lang=typescript!./popup/datepicker-popup'),
-    markup: require('!!prismjs?lang=markup!./popup/datepicker-popup.html')
+    code: '',
+    markup: ''
   },
   disabled: {
-    code: require('!!prismjs?lang=typescript!./disabled/datepicker-disabled'),
-    markup: require('!!prismjs?lang=markup!./disabled/datepicker-disabled.html')
+    code: '',
+    markup: ''
   },
   i18n: {
-    code: require('!!prismjs?lang=typescript!./i18n/datepicker-i18n'),
-    markup: require('!!prismjs?lang=markup!./i18n/datepicker-i18n.html')
+    code: '',
+    markup: ''
   },
   customday: {
-    code: require('!!prismjs?lang=typescript!./customday/datepicker-customday'),
-    markup: require('!!prismjs?lang=markup!./customday/datepicker-customday.html')
+    code: '',
+    markup: ''
   },
   config: {
-    code: require('!!prismjs?lang=typescript!./config/datepicker-config'),
-    markup: require('!!prismjs?lang=markup!./config/datepicker-config.html')
+    code: '',
+    markup: ''
   }
 };

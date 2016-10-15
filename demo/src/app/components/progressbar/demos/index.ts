@@ -6,12 +6,12 @@ export const DEMO_DIRECTIVES = [NgbdProgressbarBasic, NgbdProgressbarStriped, Ng
 
 export const DEMO_SNIPPETS = {
   basic: {
-    code: require('!!prismjs?lang=typescript!./basic/progressbar-basic'),
-    markup: require('!!prismjs?lang=markup!./basic/progressbar-basic.html')},
+    code: '',
+    markup: ''},
   striped: {
-    code: require('!!prismjs?lang=typescript!./striped/progressbar-striped'),
-    markup: require('!!prismjs?lang=markup!./striped/progressbar-striped.html')},
+    code: '',
+    markup: ''},
   config: {
-    code: require('!!prismjs?lang=typescript!./config/progressbar-config'),
-    markup: require('!!prismjs?lang=markup!./config/progressbar-config.html')}
+    code: '',
+    markup: ''}
 };

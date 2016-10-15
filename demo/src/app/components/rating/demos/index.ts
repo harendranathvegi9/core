@@ -9,23 +9,23 @@ export const DEMO_DIRECTIVES = [NgbdRatingBasic, NgbdRatingConfig,
 
 export const DEMO_SNIPPETS = {
   basic: {
-    code: require('!!prismjs?lang=typescript!./basic/rating-basic'),
-    markup: require('!!prismjs?lang=markup!./basic/rating-basic.html')
+    code: '',
+    markup: ''
   },
   events: {
-    code: require('!!prismjs?lang=typescript!./events/rating-events'),
-    markup: require('!!prismjs?lang=markup!./events/rating-events.html')
+    code: '',
+    markup: ''
   },
   template: {
-    code: require('!!prismjs?lang=typescript!./template/rating-template'),
-    markup: require('!!prismjs?lang=markup!./template/rating-template.html')
+    code: '',
+    markup: ''
   },
   decimal: {
-    code: require('!!prismjs?lang=typescript!./decimal/rating-decimal'),
-    markup: require('!!prismjs?lang=markup!./decimal/rating-decimal.html')
+    code: '',
+    markup: ''
   },
   config: {
-    code: require('!!prismjs?lang=typescript!./config/rating-config'),
-    markup: require('!!prismjs?lang=markup!./config/rating-config.html')
+    code: '',
+    markup: ''
   }
 };
