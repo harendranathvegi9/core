@@ -11,6 +11,7 @@
     "typings": "typings",
     "api-doc-tdd": "jasmine-node misc/api-doc.spec.js --autotest --watch misc/api-doc-test-cases/*.ts misc/api-doc.js",
     "build": "ngc -p tsconfig-aot.json",
+    "package": "MODE=build webpack --config webpack.aot.js --progress --profile --bail",
     "webpack2": "rm -rf aot && ngc -p tsconfig-aot.json"
   },
   "repository": {
