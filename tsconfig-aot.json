@@ -15,15 +15,13 @@
     },
     "outDir": "./aot"
   },
-
   "files": [
     "typings/index.d.ts",
     "demo/src/app/app.module.ts",
     "demo/src/main.ts"
   ],
-
   "angularCompilerOptions": {
-   "genDir": "aot",
-   "skipMetadataEmit" : true
- }
+    "genDir": "aot",
+    "skipMetadataEmit": true
+  }
 }
