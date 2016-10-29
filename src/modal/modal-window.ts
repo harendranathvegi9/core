@@ -7,7 +7,12 @@ import {
   Renderer,
   OnInit,
   AfterViewInit,
-  OnDestroy
+  OnDestroy,
+  trigger,
+  style,
+  animate,
+  transition,
+  state
 } from '@angular/core';
 
 import {ModalDismissReasons} from './modal-dismiss-reasons';
@@ -15,18 +20,35 @@ import {ModalDismissReasons} from './modal-dismiss-reasons';
 @Component({
   selector: 'ngb-modal-window',
   host: {
-    '[class]': '"modal fade in" + (windowClass ? " " + windowClass : "")',
+    '[class]': '"modal fade" + (windowClass ? " " + windowClass : "")',
     'role': 'dialog',
     'tabindex': '-1',
-    'style': 'display: block;',
+    '[style.display]': '"block"',
+    '[@fade]': '"active"',
     '(keyup.esc)': 'escKey($event)',
     '(click)': 'backdropClick()'
   },
   template: `
-    <div [class]="'modal-dialog' + (size ? ' modal-' + size : '')" role="document">
+    <div [class]="'modal-dialog' + (size ? ' modal-' + size : '')" [@slide]="'active'" role="document">
         <div class="modal-content" (click)="stopPropagation($event)"><ng-content></ng-content></div>
     </div>
-    `
+  `,
+  animations: [
+    trigger(
+        'fade',
+        [
+          state('active', style({opacity: 1})),
+          transition(':enter', [animate('0.15s')]),
+          transition(':leave', [animate('0.15s'), style({opacity: 0})]),
+        ]),
+    trigger(
+        'slide',
+        [
+          state('active', style({transform: 'translate(0,0)'})),
+          transition(':enter', [animate('0.3s ease-out')]),
+          transition(':leave', [animate('0.3s ease-out'), style({transform: 'translate(0, -25%)'})]),
+        ])
+  ]
 })
 export class NgbModalWindow implements OnInit,
     AfterViewInit, OnDestroy {

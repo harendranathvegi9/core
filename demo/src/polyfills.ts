@@ -1,5 +1,6 @@
 import 'core-js/shim';
 import 'classlist-polyfill';
+require('web-animations-js');
 require('zone.js/dist/zone');
 
 if (process.env.ENV === 'build') {
